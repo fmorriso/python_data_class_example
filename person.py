@@ -10,6 +10,7 @@ class Person:
     def generate_id() -> str:
         return ''.join(random.choices(string.ascii_uppercase, k=12))
 
+    # instance fields
     name: str
     address: str
     active: bool = True
