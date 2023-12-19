@@ -3,7 +3,7 @@ import string
 from dataclasses import dataclass, field
 
 
-@dataclass(frozen=False)
+@dataclass(kw_only=True, match_args=True, slots=True)
 class Person:
 
     @staticmethod
