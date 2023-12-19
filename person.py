@@ -3,7 +3,7 @@ import string
 from dataclasses import dataclass, field
 
 
-@dataclass
+@dataclass(frozen=False)
 class Person:
 
     @staticmethod
