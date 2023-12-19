@@ -5,5 +5,6 @@
 * Python 3.12.1
 * PyCharm Community Edition 2023.3.1
 * VSCode 1.85.1
+* [Python GitIgnore](https://github.com/github/gitignore/blob/main/Python.gitignore)
 ## History
 * Date Created: 2023-12-19
