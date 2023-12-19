@@ -14,4 +14,5 @@ class Person:
     address: str
     active: bool = True
     email_addresses: list[str] = field(default_factory=list)
-    id: str = field(default_factory=generate_id)
+    # NOTE: init=False prevents callers from providing their own ID
+    id: str = field(init=False, default_factory=generate_id)
