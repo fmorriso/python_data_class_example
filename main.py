@@ -13,6 +13,10 @@ if __name__ == '__main__':
     print(person)
     person.name = 'Fred'
     print(person)
+
+    # demonstrate @property
+    print(f'search string: {person.search_string}')
+
     # NOT WHEN slots=True: print(person.__dict__['name'])
     # FAILS due to psuedo-private "scopre" person.__search_string = ''
     # NOTE: there is no such thing as a true "private" variable in Python.
