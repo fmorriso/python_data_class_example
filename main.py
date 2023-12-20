@@ -24,3 +24,8 @@ if __name__ == '__main__':
     #       that supposedly "private" variable can be hacked as shown below.
     person._Person__search_string = ''
     print(person)
+
+    # example of "fake protection" of search_string.
+    # if tne next line is uncommented, it will result in the following error:
+    # AttributeError: property 'search_string' of 'Person' object has no setter
+    # person.search_string = 'new value'
