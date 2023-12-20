@@ -14,3 +14,9 @@ if __name__ == '__main__':
     person.name = 'Fred'
     print(person)
     # NOT WHEN slots=True: print(person.__dict__['name'])
+    # FAILS due to psuedo-private "scopre" person.__search_string = ''
+    # NOTE: there is no such thing as a true "private" variable in Python.
+    #       Even if you use the double-underscore (a.k.a., dunder) prefix,
+    #       that supposedly "private" variable can be hacked as shown below.
+    person._Person__search_string = ''
+    print(person)
